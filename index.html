@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
+  <img src="https://i.pinimg.com/236x/9c/12/78/9c1278a0abcf2bb92169e53bce104e3e.jpg" class="rung">
+
   <meta charset="UTF-8">
   <title>Trang web đầu tiên</title>
   <style>
-    body {
+  .rung {
+    animation: lắc 0.5s infinite;
+  }
+
+  @keyframes lắc {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+  }
+body {
       background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,23 +53,37 @@
     .button:hover {
       background-color: #0097a7;
     }
+    .chuchay {
+      position: relative;
+      animation: chuyenDong 2s infinite alternate;
+      color: crimson;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    @keyframes chuyenDong {
+      from { left: 0; }
+      to   { left: 200px; }
+    }    
   </style>
 </head>
 <body>
+
+
+  <p class="chuchay">👋 Xin chào mọi người!</p>
+
+
   <h1>👋 Xin chào, mình là Bảo!</h1>
   <p>Đây là trang web đầu tiên mình làm ✨</p>
+<!-- Nút 1: Chuyển đến Google -->
+<button onclick="window.location.href='https://rdd.latte.to//?channel=LIVE&binaryType=WindowsPlayer&version=version-347f4ac346734391'" class="button">
+  🌐 file roblox swift 
+</button>
 
-  <!-- Nút 1 -->
-  <button onclick="window.location.href='https://rdd.latte.to//?channel=LIVE&binaryType=WindowsPlayer&version=version-347f4ac346734391'" class="button">
-    🌐 ver roblox cho swift
-  </button>
+<!-- Nút 2: Chuyển đến YouTube -->
+<button onclick="window.location.href='https://getswift.gg/'" class="button">
+  ▶️ link tải swift
+</button>
 
-  <!-- Nút 2 -->
-  <button onclick="window.location.href='https://getswift.gg/'" class="button">
-    ▶️ lấy swift
-  </button>
-</body>
-
-  
 </body>
 </html>
